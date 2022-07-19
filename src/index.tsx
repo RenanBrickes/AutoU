@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./styles/theme";
 import { GlobalStyles } from "./styles/globalStyles";
 import { RoutesApp } from "./routes/routes";
+import { GlobalMenu } from "./components/globa_menu";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,6 +17,7 @@ root.render(
       rel="stylesheet"
     ></link>
     <ThemeProvider theme={theme}>
+      <GlobalMenu />
       <RoutesApp />
       <GlobalStyles />
     </ThemeProvider>
