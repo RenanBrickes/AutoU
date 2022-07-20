@@ -1,8 +1,11 @@
-
+import { CardLogin } from "../../components/card_login";
+import * as Styled from "./styled";
 export const Login = () => {
   return (
     <>
-      <h1>Login</h1>
+      <Styled.Container>
+        <CardLogin />
+      </Styled.Container>
     </>
   );
 };
